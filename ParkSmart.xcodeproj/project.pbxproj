@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E45583191A6B1ADB001A19D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583181A6B1ADB001A19D3 /* UIKit.framework */; };
+		E455831B1A6B1AEA001A19D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */; };
+		E455831D1A6B1AF2001A19D3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E455831C1A6B1AF2001A19D3 /* ImageIO.framework */; };
+		E455831F1A6B1AFF001A19D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E455831E1A6B1AFF001A19D3 /* Foundation.framework */; };
+		E45583211A6B1B0A001A19D3 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583201A6B1B0A001A19D3 /* CoreMedia.framework */; };
+		E45583231A6B1B13001A19D3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583221A6B1B13001A19D3 /* CoreVideo.framework */; };
+		E45583251A6B1B1E001A19D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583241A6B1B1E001A19D3 /* AVFoundation.framework */; };
+		E45583271A6B1B31001A19D3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583261A6B1B31001A19D3 /* libz.dylib */; };
+		E47819601A75DE170035C013 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E478195F1A75DE170035C013 /* UIImage+Rotate.m */; };
+		E481BF421A3CCFAD00FBDD69 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */; };
+		E481BF451A3CCFC600FBDD69 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */; };
 		E4B8E90A1A320CAB00283117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9091A320CAB00283117 /* main.m */; };
 		E4B8E90D1A320CAB00283117 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E90C1A320CAB00283117 /* AppDelegate.m */; };
-		E4B8E9101A320CAB00283117 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E90F1A320CAB00283117 /* FirstViewController.m */; };
-		E4B8E9131A320CAB00283117 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9121A320CAB00283117 /* SecondViewController.m */; };
+		E4B8E9101A320CAB00283117 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E90F1A320CAB00283117 /* ReminderViewController.m */; };
+		E4B8E9131A320CAB00283117 /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9121A320CAB00283117 /* DirectionsViewController.m */; };
 		E4B8E9161A320CAB00283117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9141A320CAB00283117 /* Main.storyboard */; };
 		E4B8E9181A320CAB00283117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9171A320CAB00283117 /* Images.xcassets */; };
 		E4B8E91B1A320CAB00283117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9191A320CAB00283117 /* LaunchScreen.xib */; };
@@ -28,15 +39,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E45583181A6B1ADB001A19D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E455831C1A6B1AF2001A19D3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E455831E1A6B1AFF001A19D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E45583201A6B1B0A001A19D3 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E45583221A6B1B13001A19D3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E45583241A6B1B1E001A19D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E45583261A6B1B31001A19D3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E478195E1A75DE170035C013 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
+		E478195F1A75DE170035C013 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		E481BF401A3CCFAD00FBDD69 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		E481BF431A3CCFC600FBDD69 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		E4B8E9041A320CAB00283117 /* ParkSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8E9081A320CAB00283117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B8E9091A320CAB00283117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4B8E90B1A320CAB00283117 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4B8E90C1A320CAB00283117 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4B8E90E1A320CAB00283117 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		E4B8E90F1A320CAB00283117 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		E4B8E9111A320CAB00283117 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		E4B8E9121A320CAB00283117 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		E4B8E90E1A320CAB00283117 /* ReminderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		E4B8E90F1A320CAB00283117 /* ReminderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		E4B8E9111A320CAB00283117 /* DirectionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectionsViewController.h; sourceTree = "<group>"; };
+		E4B8E9121A320CAB00283117 /* DirectionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectionsViewController.m; sourceTree = "<group>"; };
 		E4B8E9151A320CAB00283117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4B8E9171A320CAB00283117 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4B8E91A1A320CAB00283117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -50,6 +75,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45583271A6B1B31001A19D3 /* libz.dylib in Frameworks */,
+				E45583251A6B1B1E001A19D3 /* AVFoundation.framework in Frameworks */,
+				E45583231A6B1B13001A19D3 /* CoreVideo.framework in Frameworks */,
+				E45583211A6B1B0A001A19D3 /* CoreMedia.framework in Frameworks */,
+				E455831F1A6B1AFF001A19D3 /* Foundation.framework in Frameworks */,
+				E455831D1A6B1AF2001A19D3 /* ImageIO.framework in Frameworks */,
+				E455831B1A6B1AEA001A19D3 /* CoreGraphics.framework in Frameworks */,
+				E45583191A6B1ADB001A19D3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +96,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E45583081A6B170A001A19D3 /* Image Processing */ = {
+			isa = PBXGroup;
+			children = (
+				E478195E1A75DE170035C013 /* UIImage+Rotate.h */,
+				E478195F1A75DE170035C013 /* UIImage+Rotate.m */,
+			);
+			name = "Image Processing";
+			sourceTree = "<group>";
+		};
+		E45583281A6B1BB7001A19D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E45583261A6B1B31001A19D3 /* libz.dylib */,
+				E45583241A6B1B1E001A19D3 /* AVFoundation.framework */,
+				E45583221A6B1B13001A19D3 /* CoreVideo.framework */,
+				E45583201A6B1B0A001A19D3 /* CoreMedia.framework */,
+				E455831E1A6B1AFF001A19D3 /* Foundation.framework */,
+				E455831C1A6B1AF2001A19D3 /* ImageIO.framework */,
+				E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */,
+				E45583181A6B1ADB001A19D3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E47819651A7886520035C013 /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Libraries";
+			sourceTree = "<group>";
+		};
 		E4B8E8FB1A320CAB00283117 = {
 			isa = PBXGroup;
 			children = (
+				E47819651A7886520035C013 /* External Libraries */,
+				E45583281A6B1BB7001A19D3 /* Frameworks */,
 				E4B8E9061A320CAB00283117 /* ParkSmart */,
 				E4B8E9231A320CAB00283117 /* ParkSmartTests */,
 				E4B8E9051A320CAB00283117 /* Products */,
@@ -84,12 +150,18 @@
 		E4B8E9061A320CAB00283117 /* ParkSmart */ = {
 			isa = PBXGroup;
 			children = (
+				E4FCD0601A78917300E8C1E4 /* Utils */,
+				E45583081A6B170A001A19D3 /* Image Processing */,
 				E4B8E90B1A320CAB00283117 /* AppDelegate.h */,
 				E4B8E90C1A320CAB00283117 /* AppDelegate.m */,
-				E4B8E90E1A320CAB00283117 /* FirstViewController.h */,
-				E4B8E90F1A320CAB00283117 /* FirstViewController.m */,
-				E4B8E9111A320CAB00283117 /* SecondViewController.h */,
-				E4B8E9121A320CAB00283117 /* SecondViewController.m */,
+				E4B8E90E1A320CAB00283117 /* ReminderViewController.h */,
+				E4B8E90F1A320CAB00283117 /* ReminderViewController.m */,
+				E4B8E9111A320CAB00283117 /* DirectionsViewController.h */,
+				E4B8E9121A320CAB00283117 /* DirectionsViewController.m */,
+				E481BF401A3CCFAD00FBDD69 /* HistoryViewController.h */,
+				E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */,
+				E481BF431A3CCFC600FBDD69 /* SettingsViewController.h */,
+				E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */,
 				E4B8E9141A320CAB00283117 /* Main.storyboard */,
 				E4B8E9171A320CAB00283117 /* Images.xcassets */,
 				E4B8E9191A320CAB00283117 /* LaunchScreen.xib */,
@@ -122,6 +194,13 @@
 				E4B8E9251A320CAB00283117 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4FCD0601A78917300E8C1E4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,9 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B8E9131A320CAB00283117 /* SecondViewController.m in Sources */,
+				E4B8E9131A320CAB00283117 /* DirectionsViewController.m in Sources */,
 				E4B8E90D1A320CAB00283117 /* AppDelegate.m in Sources */,
-				E4B8E9101A320CAB00283117 /* FirstViewController.m in Sources */,
+				E4B8E9101A320CAB00283117 /* ReminderViewController.m in Sources */,
+				E481BF451A3CCFC600FBDD69 /* SettingsViewController.m in Sources */,
+				E481BF421A3CCFAD00FBDD69 /* HistoryViewController.m in Sources */,
+				E47819601A75DE170035C013 /* UIImage+Rotate.m in Sources */,
 				E4B8E90A1A320CAB00283117 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,8 +433,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"Libraries/**",
+				);
 				INFOPLIST_FILE = ParkSmart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ParkSmart/Libraries",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -361,8 +454,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"Libraries/**",
+				);
 				INFOPLIST_FILE = ParkSmart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ParkSmart/Libraries",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -420,6 +524,7 @@
 				E4B8E92C1A320CAB00283117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4B8E92D1A320CAB00283117 /* Build configuration list for PBXNativeTarget "ParkSmartTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +533,7 @@
 				E4B8E92F1A320CAB00283117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
