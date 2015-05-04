@@ -15,14 +15,25 @@
 		E45583231A6B1B13001A19D3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583221A6B1B13001A19D3 /* CoreVideo.framework */; };
 		E45583251A6B1B1E001A19D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583241A6B1B1E001A19D3 /* AVFoundation.framework */; };
 		E45583271A6B1B31001A19D3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583261A6B1B31001A19D3 /* libz.dylib */; };
+		E468556A1AA42BE7004B335E /* ReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E46855691AA42BE7004B335E /* ReminderManager.m */; };
+		E46A29161A998BED00C5B57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9141A320CAB00283117 /* Main.storyboard */; };
+		E46A29231A998ED400C5B57B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E46A29221A998ED400C5B57B /* tessdata */; };
+		E46A29281A99975C00C5B57B /* StringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A29271A99975C00C5B57B /* StringParser.m */; };
 		E47819601A75DE170035C013 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E478195F1A75DE170035C013 /* UIImage+Rotate.m */; };
+		E47E72181AE5597F00E68A9E /* UIImage+EXIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E47E72171AE5597F00E68A9E /* UIImage+EXIF.m */; };
+		E47E721A1AE559C400E68A9E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47E72191AE559C400E68A9E /* AssetsLibrary.framework */; };
+		E47E721C1AE559CB00E68A9E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47E721B1AE559CB00E68A9E /* CoreLocation.framework */; };
 		E481BF421A3CCFAD00FBDD69 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */; };
 		E481BF451A3CCFC600FBDD69 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */; };
+		E486DF181A97E6B400D14D99 /* ImageProcessingImplementation.mm in Sources */ = {isa = PBXBuildFile; fileRef = E486DF111A97E6B400D14D99 /* ImageProcessingImplementation.mm */; };
+		E486DF191A97E6B400D14D99 /* ImageProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E486DF121A97E6B400D14D99 /* ImageProcessor.cpp */; };
+		E486DF1A1A97E6B400D14D99 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = E486DF151A97E6B400D14D99 /* UIImage+OpenCV.mm */; };
+		E486DF1B1A97E6B400D14D99 /* UIImage+operation.m in Sources */ = {isa = PBXBuildFile; fileRef = E486DF171A97E6B400D14D99 /* UIImage+operation.m */; };
+		E486DF551A98CBE700D14D99 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B785C57C5F42530988B3A783 /* libPods.a */; };
 		E4B8E90A1A320CAB00283117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9091A320CAB00283117 /* main.m */; };
 		E4B8E90D1A320CAB00283117 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E90C1A320CAB00283117 /* AppDelegate.m */; };
 		E4B8E9101A320CAB00283117 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E90F1A320CAB00283117 /* ReminderViewController.m */; };
 		E4B8E9131A320CAB00283117 /* DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9121A320CAB00283117 /* DirectionsViewController.m */; };
-		E4B8E9161A320CAB00283117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9141A320CAB00283117 /* Main.storyboard */; };
 		E4B8E9181A320CAB00283117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9171A320CAB00283117 /* Images.xcassets */; };
 		E4B8E91B1A320CAB00283117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9191A320CAB00283117 /* LaunchScreen.xib */; };
 		E4B8E9271A320CAB00283117 /* ParkSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9261A320CAB00283117 /* ParkSmartTests.m */; };
@@ -39,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51384E8334F6E94A5FF5F5C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B785C57C5F42530988B3A783 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = "../Debug-iphonesimulator/libPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45583181A6B1ADB001A19D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E455831C1A6B1AF2001A19D3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -47,12 +60,31 @@
 		E45583221A6B1B13001A19D3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E45583241A6B1B1E001A19D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E45583261A6B1B31001A19D3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E46855681AA42BE7004B335E /* ReminderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderManager.h; sourceTree = "<group>"; };
+		E46855691AA42BE7004B335E /* ReminderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderManager.m; sourceTree = "<group>"; };
+		E46A29221A998ED400C5B57B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		E46A29261A99975C00C5B57B /* StringParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringParser.h; sourceTree = "<group>"; };
+		E46A29271A99975C00C5B57B /* StringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringParser.m; sourceTree = "<group>"; };
 		E478195E1A75DE170035C013 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		E478195F1A75DE170035C013 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
+		E47E72161AE5597F00E68A9E /* UIImage+EXIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EXIF.h"; sourceTree = "<group>"; };
+		E47E72171AE5597F00E68A9E /* UIImage+EXIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EXIF.m"; sourceTree = "<group>"; };
+		E47E72191AE559C400E68A9E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E47E721B1AE559CB00E68A9E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E481BF401A3CCFAD00FBDD69 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
 		E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
 		E481BF431A3CCFC600FBDD69 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		E486DF0F1A97E6B400D14D99 /* ImageProcessingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessingProtocol.h; sourceTree = "<group>"; };
+		E486DF101A97E6B400D14D99 /* ImageProcessingImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessingImplementation.h; sourceTree = "<group>"; };
+		E486DF111A97E6B400D14D99 /* ImageProcessingImplementation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessingImplementation.mm; sourceTree = "<group>"; };
+		E486DF121A97E6B400D14D99 /* ImageProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageProcessor.cpp; sourceTree = "<group>"; };
+		E486DF131A97E6B400D14D99 /* ImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
+		E486DF141A97E6B400D14D99 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		E486DF151A97E6B400D14D99 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		E486DF161A97E6B400D14D99 /* UIImage+operation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+operation.h"; sourceTree = "<group>"; };
+		E486DF171A97E6B400D14D99 /* UIImage+operation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+operation.m"; sourceTree = "<group>"; };
+		E486DF311A97F20100D14D99 /* ParkSmart-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParkSmart-Prefix.pch"; sourceTree = "<group>"; };
 		E4B8E9041A320CAB00283117 /* ParkSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8E9081A320CAB00283117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B8E9091A320CAB00283117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +100,7 @@
 		E4B8E9201A320CAB00283117 /* ParkSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8E9251A320CAB00283117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B8E9261A320CAB00283117 /* ParkSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkSmartTests.m; sourceTree = "<group>"; };
+		EB9E65520731868572EB2E6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +108,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47E721A1AE559C400E68A9E /* AssetsLibrary.framework in Frameworks */,
 				E45583271A6B1B31001A19D3 /* libz.dylib in Frameworks */,
 				E45583251A6B1B1E001A19D3 /* AVFoundation.framework in Frameworks */,
-				E45583231A6B1B13001A19D3 /* CoreVideo.framework in Frameworks */,
+				E486DF551A98CBE700D14D99 /* libPods.a in Frameworks */,
+				E47E721C1AE559CB00E68A9E /* CoreLocation.framework in Frameworks */,
 				E45583211A6B1B0A001A19D3 /* CoreMedia.framework in Frameworks */,
+				E45583231A6B1B13001A19D3 /* CoreVideo.framework in Frameworks */,
 				E455831F1A6B1AFF001A19D3 /* Foundation.framework in Frameworks */,
 				E455831D1A6B1AF2001A19D3 /* ImageIO.framework in Frameworks */,
 				E455831B1A6B1AEA001A19D3 /* CoreGraphics.framework in Frameworks */,
@@ -96,11 +132,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0DFE840A14F4457B374FB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E65520731868572EB2E6E /* Pods.debug.xcconfig */,
+				51384E8334F6E94A5FF5F5C1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E45583081A6B170A001A19D3 /* Image Processing */ = {
 			isa = PBXGroup;
 			children = (
 				E478195E1A75DE170035C013 /* UIImage+Rotate.h */,
 				E478195F1A75DE170035C013 /* UIImage+Rotate.m */,
+				E47E72161AE5597F00E68A9E /* UIImage+EXIF.h */,
+				E47E72171AE5597F00E68A9E /* UIImage+EXIF.m */,
 			);
 			name = "Image Processing";
 			sourceTree = "<group>";
@@ -108,6 +155,8 @@
 		E45583281A6B1BB7001A19D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E47E721B1AE559CB00E68A9E /* CoreLocation.framework */,
+				E47E72191AE559C400E68A9E /* AssetsLibrary.framework */,
 				E45583261A6B1B31001A19D3 /* libz.dylib */,
 				E45583241A6B1B1E001A19D3 /* AVFoundation.framework */,
 				E45583221A6B1B13001A19D3 /* CoreVideo.framework */,
@@ -116,8 +165,17 @@
 				E455831C1A6B1AF2001A19D3 /* ImageIO.framework */,
 				E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */,
 				E45583181A6B1ADB001A19D3 /* UIKit.framework */,
+				B785C57C5F42530988B3A783 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E46A291F1A998D1A00C5B57B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E46A29221A998ED400C5B57B /* tessdata */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E47819651A7886520035C013 /* External Libraries */ = {
@@ -125,6 +183,22 @@
 			children = (
 			);
 			name = "External Libraries";
+			sourceTree = "<group>";
+		};
+		E486DF0E1A97E69500D14D99 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				E486DF0F1A97E6B400D14D99 /* ImageProcessingProtocol.h */,
+				E486DF101A97E6B400D14D99 /* ImageProcessingImplementation.h */,
+				E486DF111A97E6B400D14D99 /* ImageProcessingImplementation.mm */,
+				E486DF121A97E6B400D14D99 /* ImageProcessor.cpp */,
+				E486DF131A97E6B400D14D99 /* ImageProcessor.h */,
+				E486DF141A97E6B400D14D99 /* UIImage+OpenCV.h */,
+				E486DF151A97E6B400D14D99 /* UIImage+OpenCV.mm */,
+				E486DF161A97E6B400D14D99 /* UIImage+operation.h */,
+				E486DF171A97E6B400D14D99 /* UIImage+operation.m */,
+			);
+			name = OCR;
 			sourceTree = "<group>";
 		};
 		E4B8E8FB1A320CAB00283117 = {
@@ -135,6 +209,7 @@
 				E4B8E9061A320CAB00283117 /* ParkSmart */,
 				E4B8E9231A320CAB00283117 /* ParkSmartTests */,
 				E4B8E9051A320CAB00283117 /* Products */,
+				AD0DFE840A14F4457B374FB5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,11 +225,15 @@
 		E4B8E9061A320CAB00283117 /* ParkSmart */ = {
 			isa = PBXGroup;
 			children = (
+				E46A291F1A998D1A00C5B57B /* Resources */,
+				E486DF0E1A97E69500D14D99 /* OCR */,
 				E4FCD0601A78917300E8C1E4 /* Utils */,
 				E45583081A6B170A001A19D3 /* Image Processing */,
 				E4B8E90B1A320CAB00283117 /* AppDelegate.h */,
 				E4B8E90C1A320CAB00283117 /* AppDelegate.m */,
 				E4B8E90E1A320CAB00283117 /* ReminderViewController.h */,
+				E46855681AA42BE7004B335E /* ReminderManager.h */,
+				E46855691AA42BE7004B335E /* ReminderManager.m */,
 				E4B8E90F1A320CAB00283117 /* ReminderViewController.m */,
 				E4B8E9111A320CAB00283117 /* DirectionsViewController.h */,
 				E4B8E9121A320CAB00283117 /* DirectionsViewController.m */,
@@ -173,6 +252,7 @@
 		E4B8E9071A320CAB00283117 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E486DF311A97F20100D14D99 /* ParkSmart-Prefix.pch */,
 				E4B8E9081A320CAB00283117 /* Info.plist */,
 				E4B8E9091A320CAB00283117 /* main.m */,
 			);
@@ -199,6 +279,8 @@
 		E4FCD0601A78917300E8C1E4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E46A29261A99975C00C5B57B /* StringParser.h */,
+				E46A29271A99975C00C5B57B /* StringParser.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -210,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4B8E92A1A320CAB00283117 /* Build configuration list for PBXNativeTarget "ParkSmart" */;
 			buildPhases = (
+				3DABED89AB9335289F51DFA7 /* Check Pods Manifest.lock */,
 				E4B8E9001A320CAB00283117 /* Sources */,
 				E4B8E9011A320CAB00283117 /* Frameworks */,
 				E4B8E9021A320CAB00283117 /* Resources */,
+				26CC98662CAB46BEEF52C84D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +367,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B8E9161A320CAB00283117 /* Main.storyboard in Resources */,
+				E46A29161A998BED00C5B57B /* Main.storyboard in Resources */,
+				E46A29231A998ED400C5B57B /* tessdata in Resources */,
 				E4B8E91B1A320CAB00283117 /* LaunchScreen.xib in Resources */,
 				E4B8E9181A320CAB00283117 /* Images.xcassets in Resources */,
 			);
@@ -298,15 +383,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26CC98662CAB46BEEF52C84D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DABED89AB9335289F51DFA7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4B8E9001A320CAB00283117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E468556A1AA42BE7004B335E /* ReminderManager.m in Sources */,
 				E4B8E9131A320CAB00283117 /* DirectionsViewController.m in Sources */,
 				E4B8E90D1A320CAB00283117 /* AppDelegate.m in Sources */,
 				E4B8E9101A320CAB00283117 /* ReminderViewController.m in Sources */,
+				E486DF191A97E6B400D14D99 /* ImageProcessor.cpp in Sources */,
+				E47E72181AE5597F00E68A9E /* UIImage+EXIF.m in Sources */,
+				E486DF1A1A97E6B400D14D99 /* UIImage+OpenCV.mm in Sources */,
+				E46A29281A99975C00C5B57B /* StringParser.m in Sources */,
 				E481BF451A3CCFC600FBDD69 /* SettingsViewController.m in Sources */,
+				E486DF1B1A97E6B400D14D99 /* UIImage+operation.m in Sources */,
+				E486DF181A97E6B400D14D99 /* ImageProcessingImplementation.mm in Sources */,
 				E481BF421A3CCFAD00FBDD69 /* HistoryViewController.m in Sources */,
 				E47819601A75DE170035C013 /* UIImage+Rotate.m in Sources */,
 				E4B8E90A1A320CAB00283117 /* main.m in Sources */,
@@ -431,8 +556,17 @@
 		};
 		E4B8E92B1A320CAB00283117 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9E65520731868572EB2E6E /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkSmart/ParkSmart-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -444,16 +578,26 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/ParkSmart/Libraries",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		E4B8E92C1A320CAB00283117 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51384E8334F6E94A5FF5F5C1 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkSmart/ParkSmart-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]" = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -465,8 +609,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/ParkSmart/Libraries",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

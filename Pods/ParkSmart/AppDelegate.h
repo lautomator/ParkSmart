@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  AppDelegate.h
 //  ParkSmart
 //
 //  Created by Rao, Amit on 12/5/14.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 
 @end

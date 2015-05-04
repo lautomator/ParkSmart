@@ -7,8 +7,16 @@
 //
 
 @import Photos;
+#import "ImageProcessingProtocol.h"
+#import "ImageProcessingImplementation.h"
+#import "ReminderManager.h"
 #import "ReminderViewController.h"
+#import "StringParser.h"
+#import "UIImage+operation.h"
+#import "UIImage+EXIF.h"
 
+
+const NSInteger kReminderInterval = 15; //15 min reminder
 
 @interface ReminderViewController () <UIActionSheetDelegate>
 
@@ -22,6 +30,11 @@
 @property (nonatomic, weak) IBOutlet UIButton *cameraButton;
 @property (nonatomic, weak) IBOutlet UIDatePicker *expiryTimePicker;
 
+@property (strong, nonatomic) id <ImageProcessingProtocol> imageProcessor;
+
+@property (strong, nonatomic) NSString* ocrString;
+
+
 @end
 
 @implementation ReminderViewController
@@ -29,6 +42,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    self.imageProcessor= [[ImageProcessingImplementation alloc]  init];
+    
     self.title = @"Reminder";
     self.cameraButton.hidden = YES;
     self.expiryTimePicker.hidden = YES;
@@ -98,7 +113,9 @@
     
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *rotatedCorrectly;
     
     [picker dismissViewControllerAnimated:YES completion:nil];
     
@@ -107,8 +124,15 @@
     
     UIImage *original=[info objectForKey:UIImagePickerControllerOriginalImage];
     
+    if (original.imageOrientation != UIImageOrientationUp){
+        rotatedCorrectly=[original rotate:original.imageOrientation];
+    }
+    else {
+        rotatedCorrectly=original;
+    }
+
     
-    CGImageRef ref= CGImageCreateWithImageInRect(original.CGImage, croppedRect);
+    CGImageRef ref= CGImageCreateWithImageInRect(rotatedCorrectly.CGImage, croppedRect);
     self.takenImage= [UIImage imageWithCGImage:ref];
     self.resultView.image=[self takenImage];
     
@@ -116,9 +140,29 @@
     [self.photoBoxButton.imageView setHidden:YES];
     self.cameraButton.hidden = NO;
     
+    [self OCR:nil];
+
+    NSData *originalImgData = [UIImage getImageWithMetaData:self.takenImage];
+    //NSLog(@"IMAGE EXIF DATA %@", originalImgData);
+
+}
+
+- (IBAction)OCR:(id)sender {
     
+    self.ocrString = [self.imageProcessor OCRImage:self.takenImage];
+   
+    NSString *expiryTimeString = [StringParser expiryDateFromString:self.ocrString];
+    
+    
+    if(expiryTimeString)
+    {
+        self.expiryTimeLabel.text = expiryTimeString;
+        
+        [[ReminderManager sharedInstance] setReminder:expiryTimeString Before:kReminderInterval];
+    }
     
 }
+
 
 
 
