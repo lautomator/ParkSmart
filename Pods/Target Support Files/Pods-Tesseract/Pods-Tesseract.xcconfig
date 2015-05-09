@@ -1,0 +1,2 @@
+PODS_TESSERACT_LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Tesseract/lib"
+PODS_TESSERACT_OTHER_LDFLAGS = -l"lept" -l"stdc++" -l"tesseract_all"

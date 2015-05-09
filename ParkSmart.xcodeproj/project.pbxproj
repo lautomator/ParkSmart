@@ -37,6 +37,8 @@
 		E4B8E9181A320CAB00283117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9171A320CAB00283117 /* Images.xcassets */; };
 		E4B8E91B1A320CAB00283117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9191A320CAB00283117 /* LaunchScreen.xib */; };
 		E4B8E9271A320CAB00283117 /* ParkSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9261A320CAB00283117 /* ParkSmartTests.m */; };
+		E4C5AA5F1AF81DD90005F6A7 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C5AA5E1AF81DD90005F6A7 /* LocationManager.m */; };
+		E4C5AA611AF829940005F6A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C5AA601AF829940005F6A7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		E4B8E9201A320CAB00283117 /* ParkSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8E9251A320CAB00283117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B8E9261A320CAB00283117 /* ParkSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkSmartTests.m; sourceTree = "<group>"; };
+		E4C5AA5D1AF81DD90005F6A7 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		E4C5AA5E1AF81DD90005F6A7 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		E4C5AA601AF829940005F6A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EB9E65520731868572EB2E6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +123,7 @@
 				E455831F1A6B1AFF001A19D3 /* Foundation.framework in Frameworks */,
 				E455831D1A6B1AF2001A19D3 /* ImageIO.framework in Frameworks */,
 				E455831B1A6B1AEA001A19D3 /* CoreGraphics.framework in Frameworks */,
+				E4C5AA611AF829940005F6A7 /* MapKit.framework in Frameworks */,
 				E45583191A6B1ADB001A19D3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,6 +161,7 @@
 		E45583281A6B1BB7001A19D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4C5AA601AF829940005F6A7 /* MapKit.framework */,
 				E47E721B1AE559CB00E68A9E /* CoreLocation.framework */,
 				E47E72191AE559C400E68A9E /* AssetsLibrary.framework */,
 				E45583261A6B1B31001A19D3 /* libz.dylib */,
@@ -241,6 +248,8 @@
 				E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */,
 				E481BF431A3CCFC600FBDD69 /* SettingsViewController.h */,
 				E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */,
+				E4C5AA5D1AF81DD90005F6A7 /* LocationManager.h */,
+				E4C5AA5E1AF81DD90005F6A7 /* LocationManager.m */,
 				E4B8E9141A320CAB00283117 /* Main.storyboard */,
 				E4B8E9171A320CAB00283117 /* Images.xcassets */,
 				E4B8E9191A320CAB00283117 /* LaunchScreen.xib */,
@@ -336,6 +345,11 @@
 				TargetAttributes = {
 					E4B8E9031A320CAB00283117 = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					E4B8E91F1A320CAB00283117 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -427,6 +441,7 @@
 				E4B8E9101A320CAB00283117 /* ReminderViewController.m in Sources */,
 				E486DF191A97E6B400D14D99 /* ImageProcessor.cpp in Sources */,
 				E47E72181AE5597F00E68A9E /* UIImage+EXIF.m in Sources */,
+				E4C5AA5F1AF81DD90005F6A7 /* LocationManager.m in Sources */,
 				E486DF1A1A97E6B400D14D99 /* UIImage+OpenCV.mm in Sources */,
 				E46A29281A99975C00C5B57B /* StringParser.m in Sources */,
 				E481BF451A3CCFC600FBDD69 /* SettingsViewController.m in Sources */,

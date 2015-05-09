@@ -9,6 +9,7 @@
 @import Photos;
 #import "ImageProcessingProtocol.h"
 #import "ImageProcessingImplementation.h"
+#import "LocationManager.h"
 #import "ReminderManager.h"
 #import "ReminderViewController.h"
 #import "StringParser.h"
@@ -144,6 +145,8 @@ const NSInteger kReminderInterval = 15; //15 min reminder
 
     NSData *originalImgData = [UIImage getImageWithMetaData:self.takenImage];
     //NSLog(@"IMAGE EXIF DATA %@", originalImgData);
+
+    [LocationManager processImageEXIFData:originalImgData];
 
 }
 

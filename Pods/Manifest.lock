@@ -1,0 +1,13 @@
+PODS:
+  - OpenCV (2.4.6)
+  - Tesseract (0.0.1)
+
+DEPENDENCIES:
+  - OpenCV
+  - Tesseract
+
+SPEC CHECKSUMS:
+  OpenCV: c3c06f17b705929b43ee3246a23f79d0f64559e6
+  Tesseract: bfa41209077c3ed94e03f990e07adefa32d472c6
+
+COCOAPODS: 0.35.0
