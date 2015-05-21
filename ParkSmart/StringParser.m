@@ -16,7 +16,7 @@
     
     
     NSError *error = nil;
-    NSString *matchPattern = @"\\d\\d:\\d\\d(A|P)M";
+    NSString *matchPattern = @"\\d\\d(\\s)*:(\\s)*\\d\\d(A|P)M";
     
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:matchPattern options:NSRegularExpressionCaseInsensitive error:&error];
     

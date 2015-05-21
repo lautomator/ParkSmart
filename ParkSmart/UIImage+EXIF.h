@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (EXIF)
+@interface UIImage (EXIF) 
 
 + (NSMutableData *)getImageWithMetaData:(UIImage *)pImage;
 + (NSMutableData *)getImagedataPhotoLibrary:(NSDictionary *)pImgDictionary andImage:(UIImage *)pImage;

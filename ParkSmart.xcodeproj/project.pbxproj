@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E41E97731B03FE28002C361A /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41E97721B03FE28002C361A /* ImageViewController.m */; };
+		E41E97761B03FE7A002C361A /* ImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E41E97751B03FE7A002C361A /* ImageScrollView.m */; };
 		E45583191A6B1ADB001A19D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583181A6B1ADB001A19D3 /* UIKit.framework */; };
 		E455831B1A6B1AEA001A19D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */; };
 		E455831D1A6B1AF2001A19D3 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E455831C1A6B1AF2001A19D3 /* ImageIO.framework */; };
@@ -20,7 +22,6 @@
 		E46A29231A998ED400C5B57B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E46A29221A998ED400C5B57B /* tessdata */; };
 		E46A29281A99975C00C5B57B /* StringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A29271A99975C00C5B57B /* StringParser.m */; };
 		E47819601A75DE170035C013 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E478195F1A75DE170035C013 /* UIImage+Rotate.m */; };
-		E47E72181AE5597F00E68A9E /* UIImage+EXIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E47E72171AE5597F00E68A9E /* UIImage+EXIF.m */; };
 		E47E721A1AE559C400E68A9E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47E72191AE559C400E68A9E /* AssetsLibrary.framework */; };
 		E47E721C1AE559CB00E68A9E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47E721B1AE559CB00E68A9E /* CoreLocation.framework */; };
 		E481BF421A3CCFAD00FBDD69 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */; };
@@ -37,7 +38,7 @@
 		E4B8E9181A320CAB00283117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9171A320CAB00283117 /* Images.xcassets */; };
 		E4B8E91B1A320CAB00283117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9191A320CAB00283117 /* LaunchScreen.xib */; };
 		E4B8E9271A320CAB00283117 /* ParkSmartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B8E9261A320CAB00283117 /* ParkSmartTests.m */; };
-		E4C5AA5F1AF81DD90005F6A7 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C5AA5E1AF81DD90005F6A7 /* LocationManager.m */; };
+		E4C5AA5F1AF81DD90005F6A7 /* ImageLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C5AA5E1AF81DD90005F6A7 /* ImageLocationManager.m */; };
 		E4C5AA611AF829940005F6A7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C5AA601AF829940005F6A7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,10 @@
 /* Begin PBXFileReference section */
 		51384E8334F6E94A5FF5F5C1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B785C57C5F42530988B3A783 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPods.a; path = "../Debug-iphonesimulator/libPods.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41E97711B03FE28002C361A /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		E41E97721B03FE28002C361A /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		E41E97741B03FE7A002C361A /* ImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScrollView.h; sourceTree = "<group>"; };
+		E41E97751B03FE7A002C361A /* ImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageScrollView.m; sourceTree = "<group>"; };
 		E45583181A6B1ADB001A19D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E455831A1A6B1AEA001A19D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E455831C1A6B1AF2001A19D3 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
@@ -69,8 +74,6 @@
 		E46A29271A99975C00C5B57B /* StringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringParser.m; sourceTree = "<group>"; };
 		E478195E1A75DE170035C013 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		E478195F1A75DE170035C013 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
-		E47E72161AE5597F00E68A9E /* UIImage+EXIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EXIF.h"; sourceTree = "<group>"; };
-		E47E72171AE5597F00E68A9E /* UIImage+EXIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EXIF.m"; sourceTree = "<group>"; };
 		E47E72191AE559C400E68A9E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		E47E721B1AE559CB00E68A9E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E481BF401A3CCFAD00FBDD69 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
@@ -102,8 +105,8 @@
 		E4B8E9201A320CAB00283117 /* ParkSmartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkSmartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B8E9251A320CAB00283117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B8E9261A320CAB00283117 /* ParkSmartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkSmartTests.m; sourceTree = "<group>"; };
-		E4C5AA5D1AF81DD90005F6A7 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		E4C5AA5E1AF81DD90005F6A7 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		E4C5AA5D1AF81DD90005F6A7 /* ImageLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLocationManager.h; sourceTree = "<group>"; };
+		E4C5AA5E1AF81DD90005F6A7 /* ImageLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLocationManager.m; sourceTree = "<group>"; };
 		E4C5AA601AF829940005F6A7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EB9E65520731868572EB2E6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,9 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				E478195E1A75DE170035C013 /* UIImage+Rotate.h */,
+				E41E97741B03FE7A002C361A /* ImageScrollView.h */,
+				E41E97751B03FE7A002C361A /* ImageScrollView.m */,
 				E478195F1A75DE170035C013 /* UIImage+Rotate.m */,
-				E47E72161AE5597F00E68A9E /* UIImage+EXIF.h */,
-				E47E72171AE5597F00E68A9E /* UIImage+EXIF.m */,
 			);
 			name = "Image Processing";
 			sourceTree = "<group>";
@@ -248,8 +251,10 @@
 				E481BF411A3CCFAD00FBDD69 /* HistoryViewController.m */,
 				E481BF431A3CCFC600FBDD69 /* SettingsViewController.h */,
 				E481BF441A3CCFC600FBDD69 /* SettingsViewController.m */,
-				E4C5AA5D1AF81DD90005F6A7 /* LocationManager.h */,
-				E4C5AA5E1AF81DD90005F6A7 /* LocationManager.m */,
+				E4C5AA5D1AF81DD90005F6A7 /* ImageLocationManager.h */,
+				E4C5AA5E1AF81DD90005F6A7 /* ImageLocationManager.m */,
+				E41E97711B03FE28002C361A /* ImageViewController.h */,
+				E41E97721B03FE28002C361A /* ImageViewController.m */,
 				E4B8E9141A320CAB00283117 /* Main.storyboard */,
 				E4B8E9171A320CAB00283117 /* Images.xcassets */,
 				E4B8E9191A320CAB00283117 /* LaunchScreen.xib */,
@@ -435,15 +440,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E41E97731B03FE28002C361A /* ImageViewController.m in Sources */,
 				E468556A1AA42BE7004B335E /* ReminderManager.m in Sources */,
 				E4B8E9131A320CAB00283117 /* DirectionsViewController.m in Sources */,
 				E4B8E90D1A320CAB00283117 /* AppDelegate.m in Sources */,
 				E4B8E9101A320CAB00283117 /* ReminderViewController.m in Sources */,
 				E486DF191A97E6B400D14D99 /* ImageProcessor.cpp in Sources */,
-				E47E72181AE5597F00E68A9E /* UIImage+EXIF.m in Sources */,
-				E4C5AA5F1AF81DD90005F6A7 /* LocationManager.m in Sources */,
+				E4C5AA5F1AF81DD90005F6A7 /* ImageLocationManager.m in Sources */,
 				E486DF1A1A97E6B400D14D99 /* UIImage+OpenCV.mm in Sources */,
 				E46A29281A99975C00C5B57B /* StringParser.m in Sources */,
+				E41E97761B03FE7A002C361A /* ImageScrollView.m in Sources */,
 				E481BF451A3CCFC600FBDD69 /* SettingsViewController.m in Sources */,
 				E486DF1B1A97E6B400D14D99 /* UIImage+operation.m in Sources */,
 				E486DF181A97E6B400D14D99 /* ImageProcessingImplementation.mm in Sources */,

@@ -1,20 +1,38 @@
 //
-//  UIImage+EXIF.m
+//  LocationManager.m
 //  ParkSmart
 //
-//  Created by Rao, Amit on 4/20/15.
+//  Created by Rao, Amit on 5/4/15.
 //  Copyright (c) 2015 Rao, Amit. All rights reserved.
 //
 
-@import ImageIO;
 @import CoreLocation;
-#import "UIImage+EXIF.h"
+@import ImageIO;
+#import "ImageLocationManager.h"
 
-@implementation UIImage (EXIF)
+@interface ImageLocationManager () <CLLocationManagerDelegate>
+
+@property (nonatomic, strong) CLLocationManager* locationManager;
+
+@end
+
+@implementation ImageLocationManager
+
++ (instancetype)sharedInstance
+{
+    static id _sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedInstance = [[self alloc] init];
+    });
+
+    return _sharedInstance;
+}
+
+
 
 //FOR CAMERA IMAGE
-
-+ (NSMutableData *)getImageWithMetaData:(UIImage *)pImage
+- (NSMutableData *)getImageWithMetaData:(UIImage *)pImage
 {
     NSData* pngData =  UIImagePNGRepresentation(pImage);
 
@@ -29,19 +47,19 @@
         GPSDictionary = [NSMutableDictionary dictionary];
 
 
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+   self.locationManager = [[CLLocationManager alloc] init];
 
-    if ([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)])
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)])
     {
-        [locationManager requestWhenInUseAuthorization];
+        [self.locationManager requestWhenInUseAuthorization];
     }
 
-    locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
-    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters; // 10 m
-    [locationManager startUpdatingLocation];
+    self.locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters; // 10 m
+    [self.locationManager startUpdatingLocation];
 
-    CLLocationDegrees currentLatitude = locationManager.location.coordinate.latitude;
-    CLLocationDegrees currentLongitude = locationManager.location.coordinate.longitude;
+    CLLocationDegrees currentLatitude = self.locationManager.location.coordinate.latitude;
+    CLLocationDegrees currentLongitude = self.locationManager.location.coordinate.longitude;
 
     [GPSDictionary setValue:[NSNumber numberWithDouble:currentLatitude] forKey:(NSString*)kCGImagePropertyGPSLatitude];
     [GPSDictionary setValue:[NSNumber numberWithDouble:currentLongitude] forKey:(NSString*)kCGImagePropertyGPSLongitude];
@@ -59,7 +77,7 @@
         ref =@"E";
     [GPSDictionary setValue:ref forKey:(NSString*)kCGImagePropertyGPSLongitudeRef];
 
-    [GPSDictionary setValue:[NSNumber numberWithFloat:locationManager.location.altitude] forKey:(NSString*)kCGImagePropertyGPSAltitude];
+    [GPSDictionary setValue:[NSNumber numberWithFloat:self.locationManager.location.altitude] forKey:(NSString*)kCGImagePropertyGPSAltitude];
 
     //For EXIF Dictionary
     NSMutableDictionary *EXIFDictionary = [[metadataAsMutable objectForKey:(NSString *)kCGImagePropertyExifDictionary]mutableCopy];
@@ -90,16 +108,14 @@
 
     if(destination)
         CFRelease(destination);
-    
+
     CFRelease(source);
-    
+
     return dest_data;
 }
 
-
 //FOR PHOTO LIBRARY IMAGE
-
-+ (NSMutableData *)getImagedataPhotoLibrary:(NSDictionary *)pImgDictionary andImage:(UIImage *)pImage
+- (NSMutableData *)getImagedataPhotoLibrary:(NSDictionary *)pImgDictionary andImage:(UIImage *)pImage
 {
     NSData* data = UIImagePNGRepresentation(pImage);
 
@@ -125,10 +141,57 @@
     }
     if(destination)
         CFRelease(destination);
-
+    
     CFRelease(source);
     
     return dest_data;
+}
+
+
+
+- (void)processImageEXIFData:(NSData *)imageData
+{
+    CGImageSourceRef mySourceRef = CGImageSourceCreateWithData((CFDataRef)imageData, NULL);
+    if (mySourceRef != NULL)
+    {
+        NSDictionary *myMetadata = (__bridge NSDictionary *)CGImageSourceCopyPropertiesAtIndex(mySourceRef,0,NULL);
+        NSDictionary *gpsDictionary = [myMetadata objectForKey:kCGImagePropertyGPSDictionary];
+
+        
+
+        NSLog(@"Parking spot latitude = %@", [gpsDictionary objectForKey:@"Latitude"]);
+        NSLog(@"Parking spot longitude = %@", [gpsDictionary objectForKey:@"Longitude"]);
+
+    }
+
+    /*
+    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    locationManager.distanceFilter = kCLDistanceFilterNone; // whenever we move
+    locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters; // 10 m
+    [locationManager startUpdatingLocation];
+     */
+
+
+
+
+    //For Testing
+    //Setting the parking location to Khyber Pass
+    CLLocationDegrees parkingLatitude = 39.9471513;
+    CLLocationDegrees parkingLongitude = -75.1448697;
+    self.parkingLocation = [[CLLocation alloc] initWithLatitude:parkingLatitude longitude:parkingLongitude];
+    
+
+    NSLog(@"parking latitude = %f", parkingLatitude);
+    NSLog(@"parking longitude = %f", parkingLongitude);
+
+
+
+}
+
+// Location Manager Delegate Methods
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%@", [locations lastObject]);
 }
 
 @end
