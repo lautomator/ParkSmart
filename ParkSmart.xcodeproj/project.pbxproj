@@ -17,9 +17,10 @@
 		E45583231A6B1B13001A19D3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583221A6B1B13001A19D3 /* CoreVideo.framework */; };
 		E45583251A6B1B1E001A19D3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583241A6B1B1E001A19D3 /* AVFoundation.framework */; };
 		E45583271A6B1B31001A19D3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45583261A6B1B31001A19D3 /* libz.dylib */; };
+		E45BDE701B447CA9000C0C69 /* eng.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = E45BDE6E1B447CA9000C0C69 /* eng.traineddata */; };
+		E45BDE711B447CA9000C0C69 /* spa.traineddata in Resources */ = {isa = PBXBuildFile; fileRef = E45BDE6F1B447CA9000C0C69 /* spa.traineddata */; };
 		E468556A1AA42BE7004B335E /* ReminderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E46855691AA42BE7004B335E /* ReminderManager.m */; };
 		E46A29161A998BED00C5B57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B8E9141A320CAB00283117 /* Main.storyboard */; };
-		E46A29231A998ED400C5B57B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = E46A29221A998ED400C5B57B /* tessdata */; };
 		E46A29281A99975C00C5B57B /* StringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E46A29271A99975C00C5B57B /* StringParser.m */; };
 		E47819601A75DE170035C013 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = E478195F1A75DE170035C013 /* UIImage+Rotate.m */; };
 		E47E721A1AE559C400E68A9E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E47E72191AE559C400E68A9E /* AssetsLibrary.framework */; };
@@ -67,9 +68,10 @@
 		E45583221A6B1B13001A19D3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E45583241A6B1B1E001A19D3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E45583261A6B1B31001A19D3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E45BDE6E1B447CA9000C0C69 /* eng.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = eng.traineddata; sourceTree = "<group>"; };
+		E45BDE6F1B447CA9000C0C69 /* spa.traineddata */ = {isa = PBXFileReference; lastKnownFileType = file; path = spa.traineddata; sourceTree = "<group>"; };
 		E46855681AA42BE7004B335E /* ReminderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderManager.h; sourceTree = "<group>"; };
 		E46855691AA42BE7004B335E /* ReminderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderManager.m; sourceTree = "<group>"; };
-		E46A29221A998ED400C5B57B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		E46A29261A99975C00C5B57B /* StringParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringParser.h; sourceTree = "<group>"; };
 		E46A29271A99975C00C5B57B /* StringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringParser.m; sourceTree = "<group>"; };
 		E478195E1A75DE170035C013 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
@@ -180,10 +182,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E45BDE6C1B447C2E000C0C69 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = images;
+			path = Resources/images;
+			sourceTree = "<group>";
+		};
+		E45BDE6D1B447CA9000C0C69 /* tessdata */ = {
+			isa = PBXGroup;
+			children = (
+				E45BDE6E1B447CA9000C0C69 /* eng.traineddata */,
+				E45BDE6F1B447CA9000C0C69 /* spa.traineddata */,
+			);
+			name = tessdata;
+			path = Resources/tessdata;
+			sourceTree = "<group>";
+		};
 		E46A291F1A998D1A00C5B57B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E46A29221A998ED400C5B57B /* tessdata */,
+				E45BDE6D1B447CA9000C0C69 /* tessdata */,
+				E45BDE6C1B447C2E000C0C69 /* images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -386,10 +407,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45BDE701B447CA9000C0C69 /* eng.traineddata in Resources */,
 				E46A29161A998BED00C5B57B /* Main.storyboard in Resources */,
-				E46A29231A998ED400C5B57B /* tessdata in Resources */,
 				E4B8E91B1A320CAB00283117 /* LaunchScreen.xib in Resources */,
 				E4B8E9181A320CAB00283117 /* Images.xcassets in Resources */,
+				E45BDE711B447CA9000C0C69 /* spa.traineddata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
