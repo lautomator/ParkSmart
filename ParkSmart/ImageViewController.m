@@ -20,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    UIBarButtonItem* _deleteImageButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"mail-icon"] style:UIBarButtonItemStyleBordered target:self action:@selector(sendImageButton:)];
+    UIBarButtonItem* sendImageButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"mail-icon"] style:UIBarButtonItemStylePlain target:self action:@selector(sendImageButton:)];
+    self.navigationItem.rightBarButtonItem = sendImageButton;
+
 
     ImageScrollView *scrollView = [[ImageScrollView alloc] init];
     [scrollView displayImage:self.image];
@@ -32,7 +34,7 @@
 
 - (void)sendImageButton:(id)sender
 {
-
+    NSLog(@"Send Image button tapped");
 }
 
 @end
